@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "330400172621",
+    "project_id": "aplicativo-barbershop",
+    "storage_bucket": "aplicativo-barbershop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:330400172621:android:c722e7e78e848a29ec2a04",
+        "android_client_info": {
+          "package_name": "br.app.aplicativobarbershop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "330400172621-eb9jv9om67lrk2ggf0veiebea6l4evh5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDh9CjAwT5eP41bYlmtJHktTcsrA4G92ro"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "330400172621-eb9jv9om67lrk2ggf0veiebea6l4evh5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

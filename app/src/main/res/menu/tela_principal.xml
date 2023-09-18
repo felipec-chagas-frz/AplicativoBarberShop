@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group>
+        <item android:title="Sair ou Excluir" >
+
+            <menu>
+
+                <item
+                    android:id="@+id/btnExcluir"
+                    android:orderInCategory="101"
+                    android:icon="@drawable/ic_excluir"
+                    android:title="Excluir Conta" />
+
+                <item
+                    android:id="@+id/btnDeslogar"
+                    android:icon="@drawable/ic_logout"
+                    android:orderInCategory="100"
+                    android:title="Logout"
+                    app:showAsAction="never" />
+
+
+            </menu>
+
+        </item>
+    </group>
+</menu>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ic_email">
+        <item name="android:drawableRight">@drawable/ic_email</item>
+        <item name="android:paddingRight">15dp</item>
+    </style>
+
+    <style name="ic_senha">
+        <item name="android:drawableRight">@drawable/ic_senha</item>
+        <item name="android:paddingRight">15dp</item>
+    </style>
+
+    <style name="btn">
+        <item name="android:textStyle">bold</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">17dp</item>
+        <item name="backgroundTint">@color/corBotao0</item>
+    </style>
+
+    <style name="cadastrese">
+        <item name="android:textSize">23dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="cadastro">
+        <item name="android:textSize">38dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="letrasTelaPricipal">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ic_nomes_barbeiros">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="btn_marcar">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">17dp</item>
+        <item name="backgroundTint">@color/corBotao0</item>
+    </style>
+
+    <style name="check_nomes">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">13dp</item>
+    </style>
+
+   <style name="ic_nome">
+       <item name="android:layout_marginLeft">55dp</item>
+       <item name="android:layout_marginTop">-38dp</item>
+       <item name="android:textStyle">bold</item>
+       <item name="android:textSize">20dp</item>
+   </style>
+
+</resources>

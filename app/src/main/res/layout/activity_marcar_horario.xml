@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cores_fundo"
+    tools:context=".MarcarHorario">
+
+    <ImageView
+        android:id="@+id/imgHora"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgCal"
+        app:srcCompat="@android:drawable/ic_menu_recent_history" />
+
+    <ImageView
+        android:id="@+id/imgCal"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_month" />
+
+    <TextView
+        android:id="@+id/txtSlData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="144dp"
+        android:fontFamily="sans-serif-light"
+        android:hint="Selecione a data"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtMarcarHr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="184dp"
+        android:layout_marginEnd="140dp"
+        android:fontFamily="sans-serif-light"
+        android:hint="Marque o horario"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="326dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="292dp"
+        android:layout_marginEnd="61dp"
+        android:clickable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.678"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/radioBtBarbeiro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="Felipe"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <RadioButton
+            android:id="@+id/radioBtBarbeiro3"
+            android:layout_width="113dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="214dp"
+            android:layout_marginTop="-49dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Fernando"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <RadioButton
+            android:id="@+id/radioBtBarbeiro2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="95dp"
+            android:layout_marginTop="-48dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Francisco"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView7"
+        style="@style/ic_nomes_barbeiros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="268dp"
+        android:layout_marginEnd="111dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Selecione o Barbeiro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        style="@style/ic_nomes_barbeiros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="376dp"
+        android:layout_marginEnd="39dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Selecione o corte de sua preferencia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/cBCorte"
+        android:layout_width="152dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="135dp"
+        android:buttonTint="#000000"
+        android:fontFamily="sans-serif-light"
+        android:onClick="onClickPreco"
+        android:text="Corte + barba"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <CheckBox
+        android:id="@+id/cBDegrade"
+        android:layout_width="152dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginEnd="135dp"
+        android:buttonTint="#000000"
+        android:fontFamily="sans-serif-light"
+        android:onClick="onClickPreco"
+        android:text="Degradê "
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cBCorte" />
+
+    <CheckBox
+        android:id="@+id/cBNavalhado"
+        android:layout_width="152dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginEnd="135dp"
+        android:buttonTint="#000000"
+        android:fontFamily="sans-serif-light"
+        android:onClick="onClickPreco"
+        android:text="Navalhado"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cBDegrade" />
+
+    <CheckBox
+        android:id="@+id/cBSombrancelha"
+        android:layout_width="152dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginEnd="135dp"
+        android:buttonTint="#020202"
+        android:fontFamily="sans-serif-light"
+        android:onClick="onClickPreco"
+        android:text="Sombrancelha"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cBNavalhado" />
+
+    <CheckBox
+        android:id="@+id/cBDisfarcado"
+        android:layout_width="152dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="135dp"
+        android:buttonTint="#000000"
+        android:fontFamily="sans-serif-light"
+        android:onClick="onClickPreco"
+        android:text="Disfarçado"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cBSombrancelha" />
+
+    <Button
+        android:id="@+id/btnMarcar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="764dp"
+        android:layout_marginEnd="157dp"
+        android:text="Marcar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        style="@style/ic_nomes_barbeiros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="228dp"
+        android:text="Preço :"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cBDisfarcado" />
+
+    <TextView
+        android:id="@+id/txtPrecosProdutos"
+        style="@style/ic_nomes_barbeiros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="604dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="650dp"
+        android:layout_marginEnd="90dp"
+        android:text="Selecione o método de pagamento que deseja  "
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.205"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtCredito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-8dp"
+        android:layout_marginTop="32dp"
+        android:onClick="pagamentoCredito"
+        android:text="Cartão de credito"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.419"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="38dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.717"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20"
+        app:srcCompat="@drawable/ic_pix" />
+
+    <TextView
+        android:id="@+id/txtPix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="pagamentoDebito"
+        android:text="Pix"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.796"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="38dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.196"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20"
+        app:srcCompat="@drawable/ic_credito" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

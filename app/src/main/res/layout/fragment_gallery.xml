@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cores_fundo"
+    tools:context=".ui.gallery.GalleryFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        tools:context=".ui.gallery.GalleryFragment">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="109dp"
+            android:layout_marginTop="116dp"
+            android:layout_marginEnd="84dp"
+            android:text="Estilos de cortes "
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleImageView"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="190dp"
+            android:layout_marginEnd="16dp"
+            app:civ_border_color="@color/corBotao0"
+            app:civ_border_width="3dp"
+            android:src="@drawable/corte_cabelo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="37dp"
+            android:layout_marginEnd="36dp"
+            app:civ_border_color="@color/corBotao0"
+            app:civ_border_width="3dp"
+            android:src="@drawable/corte_cabelo3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/circleImageView" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="288dp"
+            android:layout_marginEnd="36dp"
+            app:civ_border_color="@color/corBotao0"
+            app:civ_border_width="3dp"
+            android:src="@drawable/corte_cabelo4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/circleImageView" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="544dp"
+            android:layout_marginEnd="36dp"
+            app:civ_border_color="@color/corBotao0"
+            app:civ_border_width="3dp"
+            android:src="@drawable/corte_cabelo2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.72"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/circleImageView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
